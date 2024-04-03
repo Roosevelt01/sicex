@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sicex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+    <!-- header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#" class="nav__logo">
+                    <i class="ri-code-s-slash-line"></i> CodeBox
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="index.html" class="nav__link">Inicio</a>
+                    </li>
+
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Producto <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-flashlight-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Sisduan</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Indistrias</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Cámaras de comercio</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Universidades</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Embajadas</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-heart-3-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Estudios especializado</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Automotriz</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Celulares</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Equipos médicos</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Famacéutica</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Línea blanca</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#" class="dropdown__link">Llantas</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#" class="dropdown__link">Maquinaria pesada</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Papel</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Siderurgica</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-book-mark-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Reporte Bi</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Aguacate</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Bicicletas</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Avícola</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Papel y textura</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Textiles</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="#" class="dropdown__link">Flores</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Cueros</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Motos</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Autos</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Café</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Llantas</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Maíz</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-file-paper-2-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Sismax</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Colombia</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">USA</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-file-paper-2-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Extra</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">SISPACOL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">DAECO Data Analytics</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Contáctanos
+                        </div>
+                    </li>
+
+                    <!--=============== DROPDOWN 3 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                           Blog <!--<i class="ri-arrow-down-s-line dropdown__arrow"></i> -->
+                        </div>
+
+                        <!-- <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-community-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">About us</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Support</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="dropdown__group">
+                                    <div class="dropdown__icon">
+                                        <i class="ri-shield-line"></i>
+                                    </div>
+
+                                    <span class="dropdown__title">Safety and quality</span>
+
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Cookie settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousell -->
+    <div class="carousel">
+        <div class="list">
+            <!-- <div class="item">
+                <img class="products" src="img1.png">
+                <div class="introduce">
+                    <div class="title">Obtenga con la plataforma</div>
+                    <div class="topic">Sisduan</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Aerphone GHTK</div>
+                    <div class="des">
+                        
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Used Time</p>
+                            <p>6 hours</p>
+                        </div>
+                        <div>
+                            <p>Charging port</p>
+                            <p>Type-C</p>
+                        </div>
+                        <div>
+                            <p>Compatible</p>
+                            <p>Android</p>
+                        </div>
+                        <div>
+                            <p>Bluetooth</p>
+                            <p>5.3</p>
+                        </div>
+                        <div>
+                            <p>Controlled</p>
+                            <p>Touch</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="item">
+                <div class="content">
+                    <img src="sisduan.png">
+                <div class="introduce">
+                    <div class="title">Obtenga con la plataforma</div>
+                    <div class="topic">Sisduan</div>
+                    <div class="des">
+                        información del alto valor sobre las importaciones y exportacione de más de 53 países a nivel mundial con datos de importador, exportador y proveedor.
+                    </div>
+                    <button class="seeMore">Leer más &#8599</button>
+                </div>
+                </div>
+                <div class="detail">
+                    <div class="title">Sisduan</div>
+                    <div class="des">
+                        Ahora es más fácil comprar en línea, suscríbase a Sisduan para hacer investigación de importaciones y exportaciones de distintos mercados. Amplíe sus oportunidades de negocio en materia de comercio exterior.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Gold</p>
+                            <p>55 PAÍSES</p>
+                        </div>
+                        <div>
+                            <p>PREMIUM</p>
+                            <p>12 PAÍSES</p>
+                        </div>
+                        <div>
+                            <p>COLOMBIA</p>
+                            <p>1 PAÍS</p>
+                        </div>
+                        <div>
+                            <p>BASIC</p>
+                            <p>1 PAÍS</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Solicitar mas información</button>
+                        <!-- <button>CHECKOUT</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="analisis.png">
+                <div class="introduce">
+                    <div class="title">Ánalisis Inteligente</div>
+                    <div class="topic">Del mercado</div>
+                    <div class="des">
+                        Tome decisiones estratégicas para su empresa con información eficiente y oportuna sobre distintos mercados
+                    </div>
+                    <button class="seeMore">Leer más &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Minería de datos</div>
+                    <div class="des">
+                        Utilizamos técnicas de minería de datos para analizar las variables más relevantes de tu industria, brindándote información precisa y personalizada.Comprende las tendencias del mercado, el comportamiento de tus clientes y competidores, y las oportunidades y riesgos que enfrenta tu negocio.
+                    </div>
+                    <!-- <div class="specifications">
+                        <div>
+                            <p>Used Time</p>
+                            <p>6 hours</p>
+                        </div>
+                        <div>
+                            <p>Charging port</p>
+                            <p>Type-C</p>
+                        </div>
+                        <div>
+                            <p>Compatible</p>
+                            <p>Android</p>
+                        </div>
+                        <div>
+                            <p>Bluetooth</p>
+                            <p>5.3</p>
+                        </div>
+                        <div>
+                            <p>Controlled</p>
+                            <p>Touch</p>
+                        </div>
+                    </div> -->
+                    <div class="checkout">
+                        <button style="margin-top: 1em;" >SOLICITAR MÁS INFORMACIÓN</button>
+                        <!-- <button>CHECKOUT</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="sismar.png">
+                <div class="introduce">
+                    <div class="title">Encuentre en </div>
+                    <div class="topic">Sismar</div>
+                    <div class="des">
+                        Todos los movimientos diarios de carga marítima en Venezuela en una plataforma completamente online
+                    </div>
+                    <button class="seeMore">Leer más &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Sismar</div>
+                    <div class="des">
+                        Plataforma online de estadísticas de movimiento marítimo en puertos venezolanos. Obtén información diaria sobre importaciones, exportaciones y competencia en el transporte de contenedores, cargas sueltas y granel. 
+                    </div>
+                    <!-- <div class="specifications">
+                        <div>
+                            <p>Used Time</p>
+                            <p>6 hours</p>
+                        </div>
+                        <div>
+                            <p>Charging port</p>
+                            <p>Type-C</p>
+                        </div>
+                        <div>
+                            <p>Compatible</p>
+                            <p>Android</p>
+                        </div>
+                        <div>
+                            <p>Bluetooth</p>
+                            <p>5.3</p>
+                        </div>
+                        <div>
+                            <p>Controlled</p>
+                            <p>Touch</p>
+                        </div>
+                    </div> -->
+                    <div class="checkout">
+                        <button style="margin-top: 1em;" >SOLICITAR MÁS INFORMACIÓN</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="especializado.png">
+                <div class="introduce">
+                    <div class="title">Especialización del</div>
+                    <div class="topic">Mercado</div>
+                    <div class="des">
+                        Que permite conocer las tendencias y participaciones en un mercado cambiante y diverso, haga inteligencia de mercados y obtenga información de alto valor para su empresa.
+                    </div>
+                    <button class="seeMore">Leer más &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Estudio especializado</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod.
+                    </div>
+                    <!-- <div class="specifications">
+                        <div>
+                            <p>Used Time</p>
+                            <p>6 hours</p>
+                        </div>
+                        <div>
+                            <p>Charging port</p>
+                            <p>Type-C</p>
+                        </div>
+                        <div>
+                            <p>Compatible</p>
+                            <p>Android</p>
+                        </div>
+                        <div>
+                            <p>Bluetooth</p>
+                            <p>5.3</p>
+                        </div>
+                        <div>
+                            <p>Controlled</p>
+                            <p>Touch</p>
+                        </div>
+                    </div> -->
+                    <div class="checkout">
+                        <button style="margin-top: 1em;" >SOLICITAR MÁS INFORMACIÓN</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="item">
+                <img src="images/img6.png">
+                <div class="introduce">
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">Aerphone</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Aerphone GHTK</div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Used Time</p>
+                            <p>6 hours</p>
+                        </div>
+                        <div>
+                            <p>Charging port</p>
+                            <p>Type-C</p>
+                        </div>
+                        <div>
+                            <p>Compatible</p>
+                            <p>Android</p>
+                        </div>
+                        <div>
+                            <p>Bluetooth</p>
+                            <p>5.3</p>
+                        </div>
+                        <div>
+                            <p>Controlled</p>
+                            <p>Touch</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>ADD TO CART</button>
+                        <button>CHECKOUT</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+            <button id="back">Ver todo  &#8599</button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="carousel.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
